@@ -34,14 +34,6 @@ public class ProdutoResource {
 		return produtoRepository.findAll();
 	}
 	
-	/*
-	 * @GetMapping("/produtos/{id}") public Optional<Produto>
-	 * listaProduto(@PathVariable Long id){
-	 * 
-	 * 
-	 * return produtoRepository.findById(id); }
-	 */
-	
 	@GetMapping("/produtos/{id}")
 	@ApiOperation(value="Este método faz a busca por um único produto")
 	public Produto buscaProduto(@PathVariable long id){
